@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joguinho</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body class="game">
+	<h1>Js - Pedra, papel, tesoura</h1>
+	<h3>Jogador 1:</h3>
+	<img src="/img/pedra.png" alt="pedra">
+	<img src="/img/papel.jpg" alt="papel">
+	<img src="/img/tesoura.jpg" alt="tesoura">
+
+	<form action="" name="form">
+		<input onclick="printar()" name="form" type="radio" id="pedra"> Pedra
+		<input onclick="printar()" name="form" type="radio" id="papel"> Papel
+		<input onclick="printar()" name="form" type="radio" id="tesoura"> Tesoura
+		<p>
+			
+		</p>
+	</form>
+
+
+	<img id="imageoption1">
+	<p id="teste"></p>
+<hr>
+	<!-- <h1>Js - Pedra, papel, tesoura</h1> -->
+	<h3>Jogador 2:</h3>
+	<img src="/img/pedra.png" alt="pedra">
+	<img src="/img/papel.jpg" alt="pedra">
+	<img src="/img/tesoura.jpg" alt="pedra">
+
+	<form action="" name="form2">
+		<input onclick="printar2()" name="form2" type="radio" id="pedra2"> Pedra
+		<input onclick="printar2()" name="form2" type="radio" id="papel2"> Papel
+		<input onclick="printar2()" name="form2" type="radio" id="tesoura2"> Tesoura
+		<p>
+			<!-- <input type="button" value="jogar" onclick="jogador2()"> -->
+			<!-- <input type="reset" value="limpar" onclick="limpar2()"> -->
+		</p>
+	</form>
+	<!-- <hr> -->
+
+	<img id="imageoption2">
+	<p id="teste2"></p>
+	<hr>
+	
+
+	<!-- Trigger/Open The Modal -->
+<button onclick="verificar(); jogador1(); jogador2()" class="button">Verificar resultado</button>
+
+<div>
+	<p onclick="verificacao()" id="resultado"></p>
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+	
+
+
+</body>
+
+
+
+</html>
